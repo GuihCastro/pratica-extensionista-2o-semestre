@@ -1,0 +1,87 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remover estilos padrão de listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remover decoração de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remover estilos padrão de botões */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* Garantir que imagens não ultrapassem os limites do container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remover estilos padrão de formulários */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Remover espaçamento padrão de elementos de bloco */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* Remover estilos padrão de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Garantir que elementos HTML5 sejam renderizados como blocos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}

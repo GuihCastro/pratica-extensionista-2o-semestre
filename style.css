@@ -1,0 +1,278 @@
+@import url('reset.css');
+
+body {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    transition: filter 0.3s ease;
+}
+
+header nav ul li a:hover {
+    filter: brightness(.8);
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.carrossel {
+    position: relative;
+    max-width: 450px;
+    height: 600px;
+    /* margin: 0 auto 20px; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    /* object-fit: fill; */
+
+}
+
+.carrossel-item {
+    /* width: 100%; */
+    box-sizing: border-box;
+
+}
+
+.carrossel-item img {
+    height: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.carrossel-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    /* padding: 10px; */
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carrossel-btn.anterior {
+    left: 10px;
+}
+
+.carrossel-btn.proximo {
+    right: 10px;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.relatorio-final {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.relatorio-final h3 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.relatorio-final h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.relatorio-final p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.relatorio-final ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    list-style: inside url('src/droplet-silhouette.png');
+}
+
+.relatorio-final ul li {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        padding-top: 120px; /* Aumentar o padding para acomodar o header maior */
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .carrossel {
+        max-width: 80vw;
+        height: 600px;
+    }
+
+    .carrossel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .relatorio-final {
+        padding: 15px;
+    }
+
+    .relatorio-final h3 {
+        font-size: 20px;
+    }
+
+    .relatorio-final h4 {
+        font-size: 18px;
+    }
+
+    .relatorio-final p {
+        font-size: 14px;
+    }
+
+    .relatorio-final ul {
+        margin-left: 15px;
+    }
+
+    .relatorio-final ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    section .wrapper {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .carrossel {
+        height: 250px; /* Reduzir ainda mais a altura do carrossel */
+    }
+
+    .carrossel-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .relatorio-final h3 {
+        font-size: 18px;
+    }
+
+    .relatorio-final h4 {
+        font-size: 16px;
+    }
+
+    .relatorio-final p {
+        font-size: 12px;
+    }
+
+    .relatorio-final ul li {
+        font-size: 12px;
+    }
+}

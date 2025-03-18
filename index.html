@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prática Extensionista | Grupo 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="droplet.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Projeto Vida Terreste | ODS 15</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Página Inicial</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#relatorio">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este projeto tem como objetivo conscientizar a comunidade local sobre a importância da preservação da
+                vida terrestre, com foco no uso sustentável da água.
+            </p>
+        </section>
+
+        <section id="objetivos">
+            <h2>Objetivos</h2>
+            <ul>
+                <li>Reduzir o consumo e desperdício de água.</li>
+                <li>Promover práticas sustentáveis.</li>
+                <li>Implementar tecnologias para o uso eficiente da água.</li>
+            </ul>
+        </section>
+
+        <section id="relatorio">
+            <h2>Relatório</h2>
+            <p>
+                Aqui estão as fotos e os resultados obtidos através do questionário aplicado na comunidade local.
+            </p>
+            <!-- Incluir aqui as fotos e os resultados do questionário -->
+
+            <div class="wrapper">
+                <div class="carrossel">
+                    <div class="carrossel-container">
+                        <img src="src/foto00.jpeg" alt="Foto do Grupo" class="carrossel-item" />
+                        <img src="src/foto01.jpeg" alt="Foto 01" class="carrossel-item" />
+                        <img src="src/foto02.jpeg" alt="Foto 02" class="carrossel-item" />
+                        <img src="src/foto03.jpeg" alt="Foto 03" class="carrossel-item" />
+                        <img src="src/foto04.jpeg" alt="Foto 04" class="carrossel-item" />
+                        <img src="src/foto05.jpeg" alt="Foto 05" class="carrossel-item" />
+                    </div>
+
+                    <button class="carrossel-btn anterior" onclick="mudarSlide(-1)">
+                        &#10094;
+                    </button>
+
+                    <button class="carrossel-btn proximo" onclick="mudarSlide(1)">
+                        &#10095;
+                    </button>
+                </div>
+
+                <div class="questionario">
+                    <h3>Perguntas e Respostas</h3>
+                    <ul>
+                        <li>
+                            <br>
+                            <strong>Pergunta 1:</strong> Qual é o seu consumo médio de água por mês?
+                            <br>
+                            <br>
+                            <span class="resposta">Entrevistado 1: <i>Entre 68,00 e 70,00;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 2: <i>78,00;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 3: <i>70,00;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 4: <i>80,00;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 5: <i>130,00.</i></span>
+                        </li>
+                        <li>
+                            <br>
+                            <strong>Pergunta 2:</strong> O que você acha que pode fazer para reduzir o seu consumo?
+                            <br>
+                            <br>
+                            <span class="resposta">Entrevistado 1: <i>Reutilizar água da máquina para lavar o
+                                    quintal;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 2: <i>Diminuir o tempo no banho e acumular roupa para
+                                    lavar
+                                    tudo junto;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 3: <i>Aproveitar a água da chuva da máquina para limpar
+                                    os
+                                    quintal;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 4: <i>Fechar a torneira na hora de escovar os dentes e
+                                    lavar
+                                    o rosto;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 5: <i>Desligar a torneira na hora de lavar a
+                                    louça.</i></span>
+                        </li>
+                        <li>
+                            <br>
+                            <strong>Pergunta 3:</strong> Você conhece algum tipo tecnologia para reduzir o consumo de
+                            água?
+                            <br>
+                            <br>
+                            <span class="resposta">Entrevistado 1: <i>Pressurizador automático;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 2: <i>Não;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 3: <i>A máquina de lavar tem a função de reutilização de
+                                    água;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 4: <i>Não;</i></span>
+                            <br>
+                            <span class="resposta">Entrevistado 5: <i>Não.</i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relatorio-final">
+                <h3>Relatório Final: Projeto Vida Terrestre - ODS 15</h3>
+                <br>
+                <h4>1. Introdução</h4>
+                <p>
+                    O projeto "Vida Terrestre - ODS 15" foi desenvolvido com o objetivo de conscientizar a comunidade
+                    local sobre a importância da preservação dos recursos naturais, com foco no uso sustentável da água.
+                    A iniciativa está alinhada ao Objetivo de Desenvolvimento Sustentável (ODS) 15 da ONU, que visa
+                    proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres. A água, como recurso
+                    essencial para a vida, foi escolhida como tema central deste projeto, uma vez que seu uso consciente
+                    é fundamental para a sustentabilidade do planeta.
+                </p>
+                <p>
+                    A proposta do projeto foi identificar os hábitos de consumo de água na comunidade local, promover a
+                    reflexão sobre práticas sustentáveis e sugerir tecnologias que possam contribuir para a redução do
+                    desperdício. Para isso, foi realizado um questionário com cinco moradores da região, cujas respostas
+                    forneceram insights valiosos sobre o tema.
+                </p>
+                <br>
+                <h4>2. Execução do Projeto</h4>
+                <p>
+                    O projeto foi executado em três etapas principais:
+                </p>
+                <ul>
+                    <li><strong>Elaboração do Questionário:</strong> Um questionário foi desenvolvido com três
+                        perguntas-chave, abordando o consumo médio de água, práticas para redução do consumo e
+                        conhecimento sobre tecnologias sustentáveis.</li>
+                    <li><strong>Aplicação do Questionário:</strong> O questionário foi aplicado a cinco moradores da
+                        comunidade local. As perguntas foram respondidas de forma voluntária e anônima, garantindo a
+                        transparência e a confiabilidade dos dados.</li>
+                    <li><strong>Análise dos Resultados:</strong> As respostas foram organizadas e analisadas para
+                        identificar padrões de consumo, práticas sustentáveis já adotadas e o nível de conhecimento
+                        sobre tecnologias que ajudam a reduzir o uso de água.</li>
+                </ul>
+                <br>
+                <h4>3. Conclusões</h4>
+                <p>
+                    A partir das respostas obtidas, foi possível chegar às seguintes conclusões:
+                </p>
+                <ul>
+                    <li><strong>Consumo de Água:</strong> O consumo médio de água entre os entrevistados varia de R$
+                        68,00 a R$ 130,00 por mês. Esses valores refletem diferentes perfis de uso, desde famílias
+                        menores até aquelas com maior demanda.</li>
+                    <li><strong>Práticas Sustentáveis:</strong> Os entrevistados demonstraram consciência sobre a
+                        importância de reduzir o consumo de água. Entre as práticas mencionadas estão a reutilização da
+                        água da máquina de lavar para limpeza de quintais, a diminuição do tempo no banho e o fechamento
+                        da torneira durante atividades como escovar os dentes ou lavar louça.</li>
+                    <li><strong>Tecnologias para Redução do Consumo:</strong> A maioria dos entrevistados não conhece
+                        tecnologias específicas para reduzir o consumo de água. Apenas um entrevistado mencionou o uso
+                        de um pressurizador automático e a função de reutilização de água da máquina de lavar.</li>
+                    <li><strong>Impacto do Projeto:</strong> O projeto alcançou seu objetivo de conscientizar a
+                        comunidade sobre a importância do uso sustentável da água. Além disso, as respostas coletadas
+                        evidenciam a necessidade de ampliar o acesso a informações sobre tecnologias e práticas que
+                        podem contribuir para a preservação dos recursos hídricos.</li>
+                </ul>
+                <br>
+                <h4>4. Recomendações</h4>
+                <p>
+                    Com base nas conclusões, sugerimos as seguintes ações para continuar o trabalho de conscientização e
+                    promover mudanças positivas na comunidade:
+                </p>
+                <ul>
+                    <li>Divulgação de tecnologias sustentáveis, como sistemas de captação de água da chuva e
+                        dispositivos de economia.</li>
+                    <li>Campanhas educativas para reforçar a importância de práticas simples, como fechar a torneira
+                        durante atividades cotidianas.</li>
+                    <li>Parcerias com empresas e órgãos públicos para oferecer incentivos ou descontos na aquisição de
+                        tecnologias sustentáveis.</li>
+                    <li>Expansão do projeto para um número maior de moradores, a fim de obter uma amostra mais
+                        representativa e identificar novas oportunidades de intervenção.</li>
+                </ul>
+                <br>
+                <h4>5. Considerações Finais</h4>
+                <p>
+                    O projeto "<i>Vida Terrestre - ODS 15</i>" demonstrou que pequenas mudanças nos hábitos diários podem ter
+                    um impacto significativo na redução do consumo de água. Além disso, evidenciou a importância de
+                    disseminar conhecimento sobre tecnologias e práticas sustentáveis. Acreditamos que, com ações
+                    contínuas e o engajamento da comunidade, é possível promover um uso mais consciente dos recursos
+                    hídricos, contribuindo para a preservação do meio ambiente e a melhoria da qualidade de vida de
+                    todos.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2023 Projeto Vida Terrestre - ODS 15 | UniAnchieta, Análise e Desenvolvimento de Sistemas, Grupo 5
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
