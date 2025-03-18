@@ -43,7 +43,7 @@ Siga os passos abaixo para rodar o projeto na sua máquina:
 ## 🌐 Acesse o Projeto Online
 
 O projeto está hospedado no GitHub Pages e pode ser acessado através do link:
-[https://GuihCastro.github.io/projeto-vida-terrestre](https://GuihCastro.github.io/projeto-vida-terrestre)
+[https://guihcastro.github.io/pratica-extensionista-2o-semestre/](https://guihcastro.github.io/pratica-extensionista-2o-semestre/)
 
 ---
 
@@ -51,9 +51,9 @@ O projeto está hospedado no GitHub Pages e pode ser acessado através do link:
 
 O questionário aplicado à comunidade local revelou:
 
-* O consumo médio de água varia entre R68,00eR**68**,**00**e**R** 130,00 por mês.
-* Práticas comuns para redução do consumo incluem reutilização da água da máquina de lavar e diminuição do tempo no banho.
-* A maioria dos entrevistados não conhece tecnologias específicas para redução do consumo de água.
+- O consumo médio de água varia entre R68,00eR**68**,**00**e**R** 130,00 por mês.
+- Práticas comuns para redução do consumo incluem reutilização da água da máquina de lavar e diminuição do tempo no banho.
+- A maioria dos entrevistados não conhece tecnologias específicas para redução do consumo de água.
 
 Para mais detalhes, consulte a seção **Relatório** na página do projeto.
 
